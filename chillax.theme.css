@@ -40,6 +40,19 @@
 
 /*Chillax Roots*/
 /*window*/ /*dark mode*/
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  border-color: transparent !important;
+  background: blue !important;
+}
+::-webkit-scrollbar-thumb {
+  border: none !important;
+  background-clip: content-box !important;
+  background: red !important;
+}
+
 :root.theme-dark {
   --window-margin: 20px; /*must be above 20px*/
   --window-colour: #0009;
