@@ -1,0 +1,645 @@
+/**
+ * @name Chillax
+ * @author Chillax Squad
+ * @authorLink https://github.com/warrayquipsome/Chillax#author
+ * @version 1.0.1
+ * @invite DrfX6286kF
+ * @description The theme where calm meets customization.
+ * @source https://github.com/warrayquipsome/Chillax
+*/
+
+/*
+     ⸙  ────     ────     ───── ❝ 𝐚𝐥𝐥 𝐫𝐢𝐠𝐡𝐭 𝐡𝐞𝐫𝐞 ❞ ─────    ────     ────  ⸙
+  ╭─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻🂡༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╮
+          █████╗   ██╗  ██╗  ██╗  ██╗      ██╗       █████╗   ██╗  ██╗       
+         ██╔══██╗  ██║  ██║  ██║  ██║      ██║      ██╔══██╗  ╚██╗██╔╝       
+  ||     ██║  ╚═╝  ███████║  ██║  ██║      ██║      ███████║   ╚███╔╝      ||
+         ██║  ██╗  ██╔══██║  ██║  ██║      ██║      ██╔══██║   ██╔██╗        
+         ╚█████╔╝  ██║  ██║  ██║  ███████╗ ███████╗ ██║  ██║  ██╔╝╚██╗       
+          ╚════╝   ╚═╝  ╚═╝  ╚═╝  ╚══════╝ ╚══════╝ ╚═╝  ╚═╝  ╚═╝  ╚═╝       
+  ╰─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻-༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╯
+
+*/
+
+/*chillax*/
+@import url('https://warrayquipsome.github.io/Chillax/chillax.css');
+
+/*removable addons*/
+/* @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css"); */
+@import url('https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/_res/SettingsIcons.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+/* @import url("https://warrayquipsome.github.io/Chillax/Addons/IconPackEdited.css"); */
+/* @import url("https://warrayquipsome.github.io/Chillax/Addons/AvatarOnlyMemberList.css"); */
+/* @import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css"); 
+
+/*additional addons*/ /*(remove the both * to use)*/
+/*@import url("https://warrayquipsome.github.io/Chillax/Addons/SimpleLessLag.css");*/
+
+
+/*Chillax Roots*/
+:root {
+  /*background image*/
+  /*(replace the link to use)*/
+  --background-image: var(--window-seat-bg);
+  /*bg dev suggestions*/
+  --wallpaper: url('https://wallpaperaccess.com/full/2799204.jpg');
+  --de-suggested-bg: url('https://preview.redd.it/tv7b6eavjgn71.png?width=1920&format=png&auto=webp&v=enabled&s=c514faef6b08bd60e596cc02ef8bf3ecfbaccc15');
+  /*modern background selection*/
+  --modern-dark-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640530071572/97EAEB95-54C2-4AF3-B70B-5E94A851409.jpeg?size=4096');
+  --modern-light-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640760754216/E98F8123-8B98-4961-90D7-DCC497A26E4.jpeg?size=4096');
+  /* my backgrounds */
+  --window-seat-bg: url('https://preview.redd.it/tv7b6eavjgn71.png?width=1920&format=png&auto=webp&v=enabled&s=c514faef6b08bd60e596cc02ef8bf3ecfbaccc15')
+}
+
+
+/*window*/ /*dark mode*/
+:root.theme-dark {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: #0009;
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(36, 36, 36);
+}
+
+/*window*/ /*light mode*/
+:root.theme-light {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: rgba(255, 255, 255, 0.6);
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(209, 209, 209);
+}
+
+
+/*roots*/ /*both dark and light*/
+:root {
+    --user-name: "Inmoresentum";
+    --edited-message: " EDITED ✎ ";
+    --font-name: Poppins;
+    --font-size: 15px;
+
+
+    /*glow radial status*/ /*must end in px*/
+    --rs-small-spacing: 0px;
+    --rs-large-spacing: 0px;
+    --rs-medium-spacing: 0px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3.5px;
+    --rs-large-width: 4.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #1df594;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-invisible-color: #636b75;
+    --rs-phone-visible: block;
+    --rs-phone-color: var(--rs-online-color);
+
+
+    /*chillax colours rgb*/ /* Google RGB Picker: https://g.co/kgs/NoY83h */
+    --accentcolor: 155, 89, 182;
+    /*chillax colours hex*/ /* Google RGB Picker: https://g.co/kgs/NoY83h */
+    --accentcolorV2: #ff4800e0;
+
+
+    /*settings modal root*/
+    --themelightsettingsmodalbackground: rgb(223, 223, 223);
+    --themedarksettingsmodalbackground: rgb(51, 49, 53);
+    --settingsmodalwidth: 960px;
+    --settingsmodalheight: 80vh;
+}
+
+/*discord transparency*//*roots*/ /*theme dark*/
+.theme-dark {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #9d9d9d;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(36, 36, 36);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/*discord transparency*//*roots*/ /*theme light*/
+.theme-light {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: rgb(0, 0, 0);
+    --header-secondary: #3f3f3f;
+    --text-normal: #303030;
+    --text-muted: #333333;
+    --channels-default: #585b5e;
+    --interactive-normal: #3a3a3a;
+    --interactive-hover: #333333;
+    --interactive-active: rgb(0, 0, 0);
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(27, 27, 27);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/*friends grid banner colour*/
+.theme-dark {
+    --FG-cards-banner-background: transparent !important;
+}
+
+.theme-light {
+    --FG-cards-banner-background: transparent !important;
+}
+
+.button__4f306:last-child:hover .contents_fb6220:hover{
+  animation: Settings 1s !important;
+  transform-origin: center !important;
+}
+
+/*Permissions*/
+/*
+-You do not have the rights to use our theme name Chillax™ on other projects 
+-You do not have the rights to remove our theme watermark in the theme
+-You do not have the rights to change this theme author name to anyone
+*/
+
+/*credits*/
+/*
+========================= Chillax Squad =========================
+ Wq                                       Author
+ Demented_Elmo                            Co-Author
+=================================================================
+ Embeds                                   by Alexis WyvernZu
+ Active Now CSS                           by Cedrick
+ Memberlist until hover                   by Cedrick
+ Hide User Buttons until Hover            by Commie Axolotl
+ Center profile badge, avatar and name    by Commie Axolotl
+ Account Details Grid                     by Dablulite
+ Blurple recolour                         by DevilBro
+ Emoji Replace                            by DevilBro
+ Settings Icons                           by DevilBro
+ Connection Issue Let Me Be               by Disease
+ Radial Status                            by Gibbu
+ About Me Clamp                           by ItMeSarah
+ Better Jump to Present Button            by Lonk
+ Better Mark As Read Button               by Lonk
+ IconPack                                 by Lavender
+ Discolored                               by Nyri4
+ Better Spotify Control                   by Uri
+=================================================================
+*/
+/*I really want to give a special shoutout to all of you for supporting me in this theme, thank you all.*/
+
+
+.timestamp_cdbd93:not(.timestampInline__470e0, .timestampVisibleOnHover_e8cc6d) time::after {
+    content: " (" attr(aria-label) ")";
+    color: var(--text-muted);
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1;
+    /* text-transform: lowercase; */
+}
+.edited_b20dd9:not(.message-translate-indicator) {
+    display: none;
+}
+
+
+/* .theme-dark .panels__58331 {
+    width: 240px !important;
+}
+
+.theme-light .panels__58331 {
+    width: 240px !important;
+} */
+
+.mentioned_fa6fd2  {
+  border-radius: 0 8px 8px 0!important
+}
+/*custom mentioned colour*/
+.theme-dark .mentioned_fa6fd2:before {
+  background: linear-gradient(135deg, #3b3b3b, var(--accentcolorV2)) !important;
+}
+.theme-dark .mentioned_fa6fd2 {
+  background: linear-gradient(
+    60deg,
+    rgba(41, 41, 41, 0.3),
+    rgba(var(--accentcolor), 0.9)
+  ) !important;
+}
+.theme-dark .mentioned_fa6fd2:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(32, 32, 32, 0.5),
+    rgba(var(--accentcolor))
+  ) !important;
+}
+
+
+/* is unread stuff */
+.content__7191e {
+  display: none;
+  right: 50% !important;
+}
+
+.unreadPillCap__44e20 {
+  display: none;
+  right: 50%;
+}
+
+.isUnread_de09f5 {
+  --divider-color: rgb(237, 0, 255);
+  border: none;
+  background: linear-gradient(90deg,
+      rgba(237, 0, 255, 1) 0%,
+      #fb5454 25%,
+      rgba(0, 0, 0, 0) 50%,
+      #fb5454 75%,
+      rgba(254, 0, 255, 1) 100%);
+  height: 1px;
+}
+
+
+/* Un-hide unread divider with date */
+.isUnread_de09f5 {
+  display: flex !important;
+}
+
+.unreadPill__1b4fa {
+  background-color: var(--background-shading);
+  color: #fb5454;
+  font-size: 12px;
+  letter-spacing: 20px;
+  right: 50%;
+  left: 50%;
+  width: 30px;
+}
+
+.unreadPill__1b4fa {
+  top: -6px;
+}
+
+/* Forum thingy */
+.forumOrHome__8b95a {
+  background: transparent!important;
+}
+.forumOrHome__8b95a {
+   background: transparent;
+}
+
+/*forum channel*/
+.container_b92032 {
+  background: transparent !important;
+}
+
+/*forum fix*/
+.container_b92032 {
+  background: transparent;
+}
+
+/*forum thread overlap fix*/
+.chatTarget_f14a03.container__694a1.floating__8f631{
+  background: rgba(26, 26, 26, 0.95) !important;
+  box-shadow: 0 0 15px rgb(0, 0, 0) !important;
+}
+
+/*code block*/
+.theme-dark .codeContainer__49b46 .scrollbar_b61b2b {
+  background-color: rgba(0, 0, 0, 0.377) !important;
+}
+
+/* IDK what it does. Maybe WQ can tell?? */
+.flex_fc800b .scrollbar_b61b2b {
+  background-color: transparent!important;
+}
+
+/* transparent role selection / browse channels / members page background */
+.container__26baa,
+.container__03ec9,
+.scrollerContainer_dda72c,
+.container__6b2e5,
+.container__7590f {
+  background-color: transparent !important;
+}
+
+/*menu blur*/
+.theme-dark .menu__088f7 {
+  /*Main class*/
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menu__088f7::before,
+.menu__088f7.submenu-1apzyU::before {
+  /*Blurs the menu*/
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  z-index: -1;
+  border-radius: 5px;
+}
+/* Fix blur in nested floating menu */
+.submenu_acf564.menu__088f7::before {
+  width: calc(100% - 16px);
+}
+
+/* button design*/
+.theme-dark .lookFilled__950dd {
+  border-radius: 45px;
+  background: rgb(36, 36, 36) !important;
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto";
+  font-size: 12px;
+  transition: 0.2s;
+}
+.theme-dark .lookFilled__950dd:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0) !important;
+  transition: 0.1s;
+}
+
+/*chatbox recolour*/
+.input-2g-os5,
+.scrollableContainer_ff917f{
+  background-color: transparent!important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  outline: none;
+}
+.placeholder_e68c63.slateTextArea__0661c.fontSize16Padding__48818{
+  color: transparent!important;
+}
+
+.theme-dark .input-2g-os5:hover,
+.theme-dark .scrollableContainer_ff917f:hover {
+  background-color: #00000023!important;
+}
+
+/* attachedBars is the reply bar */
+.theme-dark .input-2g-os5:focus-within,
+.theme-dark .scrollableContainer_ff917f:focus-within {
+  background-color: #181a1d!important;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated the placeholder class only other maybe needs to be updated*/
+.placeholder_dec8c7.slateTextArea__0661c.fontSize16Padding__48818{
+  color: transparent!important;
+}
+/*Textbox Text*/
+.theme-dark .placeholder_dec8c7 {
+  visibility: hidden !important;
+}
+
+
+.theme-dark .placeholder_dec8c7::before {
+  content: "Life is so much easier when you just take a moment to chill";
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Poppins";
+  font-size: 13px;
+  visibility: visible !important;
+}
+
+/*avatar only memberlist*/
+.membersWrap__5ca6b {
+  min-width: unset;
+}
+
+.members__573eb {
+  max-width: 65px;
+  min-width: 65px;
+  transition: 0.5s ease;
+}
+
+.members__573eb:hover {
+  max-width: 240px;
+  min-width: 240px;
+}
+
+div:not(:hover)>.members__573eb>div {
+  padding-top: 10px;
+}
+
+/* Fix alignment issues with the members list */
+.container_b2ce9c,
+.membersWrap__5ca6b {
+  width: 65px;
+}
+
+/* Make the member list expand on top of the chat instead of shifting it */
+.members__573eb {
+  margin-left: 0px;
+  background-color: #0000;
+  transition: 0.5s ease;
+}
+
+.members__573eb:hover {
+  margin-left: -175px;
+  background-color: #181a1ddd;
+}
+
+/* Make the list fill the window height */
+.membersWrap__5ca6b {
+  height: 100%;
+}
+
+/* Fix the member count addon (vencord) */
+.members__573eb:not(:hover) > #vc-membercount > div > span:first-child {
+    display: none !important;
+}
+.members__573eb:not(:hover) > #vc-membercount > div {
+    box-sizing: border-box !important;
+    flex: 1 0 100%;
+}
+.members__573eb:not(:hover) > #vc-membercount {
+  flex-wrap: wrap;
+}
+
+/*floating user controls*/
+.theme-dark .panels__58331 {
+  background: #181a1d!important;
+  box-shadow: 0 5px 8px #15171a;
+  border-radius: 12px;
+  margin: 10px 10px 23px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container_debb33 {
+  background: transparent!important;
+}
+.sidebar_e031be {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.theme-dark .sidebar_e031be .container__7e23c:after {
+  content: 'this big gap is for the floating user controls, so sry if it looks ugly';
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.03);
+  text-align: center;
+  text-shadow: 0 0 15px #000;
+  margin-top: 50px;
+  height: 340px;
+  display: block;
+}
+.panels__58331 > .container_debb33 .flex_f18b02 > :not(:last-child) {
+  opacity: 0% !important;
+  width: 50px;
+  transition: all 0.3s;
+}
+.theme-dark .panels__58331 > .container_debb33:hover .flex_f18b02 > :not(:last-child) {
+  opacity: 100% !important;
+  width: 40px;
+  margin-left: 10px;
+}
+.button__581d0[aria-label="User Settings"] {
+  margin-left: 10px;
+}
+.container_debb33 .alignStretch__2d62d.alignStretch__2d62d {
+  max-width: 190px;
+  min-width: 190px;
+}
+
+.details-ntX2k5 {
+  max-width: 805px !important;
+  min-width: 805px !important;
+}
+
+.maximized-vv2Wr0 .details-ntX2k5 {
+  max-width: 190px !important;
+  min-width: 190px !important;
+  position: relative;
+  display: block;
+  left: 0px;
+}
+
+.maximized-vv2Wr0 .cover-SwJ-ck {
+  border-radius: 8px 8px 0px 0px;
+}
+
+/* Avatar in bottom left */
+.avatarWrapper__500a6 {
+  max-width: 36px;
+  min-width: 36px;
+  transition: 0.3s;
+}
+.avatarWrapper__500a6:hover {
+  max-width: 207px;
+  min-width: 207px;
+  transition: 0.3s;
+}
+
+.flex_f18b02.vertical__1e37a.gatedContent_ba8306
+  > .flex_f18b02.flex__909d4.horizontal__992f6.horizontal__65889.flex__909d4.directionRow__2bb0b.justifyCenter__4080c.alignCenter__84269.noWrap__5c413 {
+  background: transparent !important;
+}
+/* Settings/Deafen/Mute Buttons Animated */
+.button__581d0:hover .contents-3ca1mk {
+  animation: UserModalButtons 0.5s normal ease;
+}
+
+@keyframes UserModalButtons {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+/*disable and delete account button design*/
+.theme-dark .colorRed__5a617 {
+  width: 140px !important;
+  height: 45px !important;
+  font-family: "Roboto" !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+  font-weight: 500 !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(58, 58, 58) !important;
+  border: none !important;
+  border-radius: 45px !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease 0s !important;
+  cursor: pointer !important;
+  outline: none !important;
+}
+.theme-dark .colorRed__5a617:hover {
+  background-color: rgb(229, 46, 46) !important;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: rgb(37, 37, 37) !important;
+  transform: translateY(-7px);
+}
+.theme-dark .colorRed__5a617 {
+  font-size: 0px !important;
+}
+.theme-dark .disableButton__09342.colorRed__5a617::before {
+  content: "Disable" !important;
+  position: absolute !important;
+  font-size: 11px !important;
+}
+.theme-dark .lookOutlined__014b5.colorRed__5a617::before {
+  content: "Delete" !important;
+  position: absolute !important;
+  font-size: 11px !important;
+}
+
+.theme-dark .colorRed__5a617 {
+  width: 140px !important;
+  height: 45px !important;
+  font-family: "Roboto" !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+  font-weight: 500 !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(58, 58, 58) !important;
+  border: none !important;
+  border-radius: 45px !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease 0s !important;
+  cursor: pointer !important;
+  outline: none !important;
+}
+.theme-dark .colorRed__5a617:hover {
+  background-color: rgb(229, 46, 46) !important;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: rgb(37, 37, 37) !important;
+  transform: translateY(-7px);
+}
+
+.theme-dark .colorRed__5a617 {
+  font-size: 0px !important;
+}
+.theme-dark .disableButton__09342.colorRed__5a617::before {
+  content: "Disable" !important;
+  position: absolute !important;
+  font-size: 11px !important;
+}
+
+.theme-dark.lookOutlined__014b5.colorRed__5a617::before {
+  content: "Delete" !important;
+  position: absolute !important;
+  font-size: 11px !important;
+}
